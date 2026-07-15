@@ -5,6 +5,33 @@
   padding: 2rem;
 }
 
+.navbar {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4338ca;
+  font-weight: 700;
+}
+
+.nav-link.active {
+  color: #111827;
+  border-bottom: 2px solid #4f46e5;
+}
+
+.page-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .site-header {
   background: linear-gradient(135deg, var(--theme-color, #4f46e5), #818cf8);
   color: white;
@@ -32,6 +59,16 @@
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.toggle-button {
+  align-self: flex-start;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
 }
 
 .skill-list {
@@ -63,6 +100,25 @@
   border-radius: 0.75rem;
   padding: 1rem;
   background: #f9fafb;
+}
+
+.form-label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+}
+
+.form-preview {
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 .site-footer {
